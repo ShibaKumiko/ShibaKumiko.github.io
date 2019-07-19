@@ -1,12 +1,12 @@
-
+<!doctype HTML>
 <html>
+<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.5/aframe/build/aframe-ar.js"></script>
+<script src="vendor/artoolkit.min.js"></script>
+<script src="vendor/three.min.js"></script>
+<script src="vendor/artoolkit.three.js"></script>
+<script src="ar-gif.min.js" defer></script>
 
-<head>
-    <script src="vendor/artoolkit.min.js"></script>
-    <script src="vendor/three.min.js"></script>
-    <script src="vendor/artoolkit.three.js"></script>
-    <script src="ar-gif.min.js" defer></script>
-</head>
 
 <body style="overflow: hidden; margin:0;">
     <ar-scene>
@@ -14,7 +14,7 @@
             <ar-content src="/mediacontents/ricardo.gif" scale="1.5 1.5" position="0 0 0" rotation="0 0 0">
             </ar-content>
         </ar-marker>
-
+        <a-entity camera></a-entity>
     </ar-scene>
 </body>
 
