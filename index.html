@@ -8,7 +8,8 @@
 <script src="ar-gif.min.js" defer></script>
 
 
-<body style="overflow: hidden; margin:0;">
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs='debugUIEnabled: false;'>
     <ar-scene>
         <ar-marker patt="pattern/banana.patt" src="/pattern/banana.patt">
             <ar-content src="/mediacontents/ricardo.gif" scale="1.5 1.5" position="0 0 0" rotation="0 0 0">
@@ -16,6 +17,7 @@
         </ar-marker>
         <a-entity camera></a-entity>
     </ar-scene>
+</a-scene>
 </body>
 
 </html>
