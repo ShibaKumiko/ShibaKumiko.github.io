@@ -10,26 +10,10 @@
       
       
       <a-marker preset="custom" type="pattern" url="/pattern/banana.patt">
-	  <a-video vidhandler></a-video>
+	  <a-video src="#syn" width="4" height="2.5" position="0 1 -1" play></a-video>
 	  
       </a-marker>
-AFRAME.registerComponent('vidhandler', {
-  init: function () {
-    this.toggle = false;
-    document.querySelector("#vid").pause(); //reference to the video
-  },
-  tick:function(){  
-   if(document.querySelector("a-marker").object3D.visible == true){
-     if(!this.toggle){
-       this.toggle = true;
-       document.querySelector("#vid").play();
-     }
-   }else{
-     this.toggle = false;
-     document.querySelector("#vid").pause();
-   }
-  }
-});
+
       <a-entity camera></a-entity>
     </a-scene>
   </body>
