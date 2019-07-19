@@ -5,7 +5,9 @@
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs='debugUIEnabled: false;'>
       <a-assets>
-          <video id="syn" autoplay loop ="true" src="STFC.mp4">
+          <video id="syn" autoplay loop ="true" crossorigin webkit-playsinline playsinline>
+            <source src="STFC.mp4">
+          </video>
       </a-assets>
       
       	  <a-video src="#syn" loop="true" play="true"></a-video>
